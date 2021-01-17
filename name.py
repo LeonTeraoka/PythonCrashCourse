@@ -1,3 +1,4 @@
+#1/17に2-10演習問題の解答としてコメントを記載
 name = "muffin fix"
 print (name.title())
 #title()メソッドにより、頭文字が大文字になる。
