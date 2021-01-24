@@ -1,0 +1,33 @@
+print("問題3-4")
+guest = ["muffin", "mint", "milk"]
+print(f"{guest[0].title()}さん")
+print(f"{guest[1].title()}さん")
+print(f"{guest[-1].title()}さん")
+print("問題3-5")
+guest[0] = "muffn"
+guest.append("muffin")
+print(f"{guest[0].title()}さん")
+print("問題3-6")
+guest.insert(0, "muffin_fix")
+guest.insert(3, "mint_men")
+guest.append("milk_follow")
+print(f"{guest[0].title()}さん")
+print(f"{guest[3].title()}さん")
+print(f"{guest[6].title()}さん")
+print("問題3-7")
+print(guest)
+sorry = guest.pop(0)
+print(f"ごめんなさい{sorry.title()}さん")
+sorry = guest.pop(1)
+print(f"ごめんなさい{sorry.title()}さん")
+sorry = guest.pop(2)
+print(f"ごめんなさい{sorry.title()}さん")
+sorry = guest.pop(3)
+print(f"ごめんなさい{sorry.title()}さん")
+sorry = guest.pop(-1)
+print(f"ごめんなさい{sorry.title()}さん")
+print(guest)
+del guest[0]
+del guest[0]
+print(guest)
+
