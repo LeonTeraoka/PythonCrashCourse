@@ -17,7 +17,4 @@ print(cars)
 print("-------------------")
 cars.reverse()
 print(cars)
-
-
-
-
+#len(cars)
