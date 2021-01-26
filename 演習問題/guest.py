@@ -1,5 +1,6 @@
 print("問題3-4")
 guest = ["muffin", "mint", "milk"]
+print(len(guest))
 print(f"{guest[0].title()}さん")
 print(f"{guest[1].title()}さん")
 print(f"{guest[-1].title()}さん")
