@@ -1,4 +1,5 @@
 magicians = ["alice", "david", "carolina"]
-for magicians in magicians:
-	print(magicians)
+for magician in magicians:
+	print(magician.title())
+	
 	
