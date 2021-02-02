@@ -1,5 +1,6 @@
 magicians = ["alice", "david", "carolina"]
 for magician in magicians:
+#for magician in magicians コロンを忘れるとエラー！
 #print (f"{magician.title()}は素晴らしい手品を演じた！")インデントを忘れるとエラーが発生します。
 	print (f"{magician.title()}は素晴らしい手品を演じた！")
 	print (f"{magician.title()}の次の手品が待ちきれない。\n") #\nにより最後に空行
