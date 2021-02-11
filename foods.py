@@ -11,3 +11,5 @@ print("私が好きな食べ物")
 print(my_foods)
 print("\n友達が好きな食べ物")
 print(friend_foods)
+for my_foods in my_foods[0:2]:
+	print(my_foods)
