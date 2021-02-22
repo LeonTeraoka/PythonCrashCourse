@@ -9,9 +9,9 @@ if greeting.lower() == "Hello":
 	print("false")
 
 number = 20
-if number = 20:
+if number == 20:
 	print("true")
-if number = 19:
+if number == 19:
 	print("false")
 if number >= 19:
 	print("true")
@@ -21,15 +21,17 @@ if number <= 21:
 	print("true")
 if number <= 19:
 	print("false")
-if number (number_0 >= 21) and (number_1 ):
+
+number_0 = 22
+number_1 = 22
+if number_0 >= 21 and number_1 >=21:
 	print("true")
+number_0 = 18
+if number_0 >= 21 or number_1 >= 21:
+	print("false")
 
-
-
-#reetings = ["Hello", "hi", "hey",]
-#print(greetings)
-#for greeting in greetings:
-#	if greeting == "yo":
-#		print("false")
-#	if greeting == "Hello":
-#		print("true")
+greetings = ["Hello", "hi", "hey",]
+if "hi" in greetings:
+	print("true")
+if "yo" not in greetings:
+	print("false")
