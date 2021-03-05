@@ -1,7 +1,10 @@
 requested_toppings = ["マッシュルーム","ピーマン", "エクストラチーズ"]
 
 for requested_topping in requested_toppings:
-	print(f"ピザに{requested_topping}を追加します。")
+	if requested_topping == "ピーマン":
+		print("申し訳ありません。ピーマンは品切れです。")
+	else:
+		print(f"ピザに{requested_topping}を追加します。")
 
 #if requested_topping != "アンチョビ":
 #    print("アンチョビを注文してください！")
