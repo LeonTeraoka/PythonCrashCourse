@@ -1,13 +1,19 @@
-#requested_toppings = ["マッシュルーム","ピーマン", "エクストラチーズ"]
-requested_toppings = []
+available_toppings = ["マッシュルーム", "オリーブ", "ピーマン", "エクストラチーズ", 
+						"ペパロニ", "パイナップル", "エクストラチーズ"]
 
-if requested_toppings:
-	for requested_topping in requested_toppings:
-		print(f"トッピングに{requested_topping}を追加します。")
-	print("\nピザができました！")
-else:
-	print("プレーンピザでよろしいですか？")
+requested_toppings = ["マッシュルーム", "フライドポテト", "エクストラチーズ"]
 
+for requested_topping in requested_toppings:
+	if requested_topping in available_toppings:
+		print(f"トッピングに{requested_topping}を追加します。")		
+	else:
+		print(f"申し訳ありません、{requested_topping}はありません")
+
+print("\nピザができました！")
+
+
+#else:
+#	print("プレーンピザでよろしいですか？")
 
 #for requested_topping in requested_toppings:
 #	if requested_topping == "ピーマン":
