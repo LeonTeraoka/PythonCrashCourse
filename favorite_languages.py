@@ -5,8 +5,12 @@ favorite_languages = {
 	"phil": "python",
 }
 
-for name in sorted(favorite_languages.keys()):
-	print(f"{name.title()}、投票ありがとう。")
+print("以下の言語が投票されました。")
+for language in set(favorite_languages.values()):
+	print(language.title())
+
+#for name in sorted(favorite_languages.keys()):
+#	print(f"{name.title()}、投票ありがとう。")
 
 #if "erin" not in favorite_languages.keys():
 #	print("Erin、投票してください！")
