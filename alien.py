@@ -1,3 +1,33 @@
+#エイリアンを格納する空のリストを作成する
+aliens = []
+#30匹の緑のエイリアンを生成する
+for aliens_number in range(30):
+	new_alien = {"color": "green", "points": 5, "speed": "slow"}
+	aliens.append(new_alien)
+
+for alien in aliens[:3]:
+	if alien["color"] == "green":
+		alien["color"] = "yellow"
+		alien["speed"] = "medium"
+		alien["points"] = 10
+	elif alien["color"] == "yelllow":
+		alien["color"] = "red"
+		alien["speed"] = "fast"
+		alien["points"] = 15
+
+#最初の5匹のエイリアンの情報を出力する
+for alien in aliens[:5]:
+	print(alien)
+print("...")
+
+#生成されたエイリアンの数を出力する
+print(f"全エイリアンの数: {len(aliens)}")
+
+
+
+
+
+
 #alien_0 = {"x_position": 0, "y_position": 25, "speed": "medium"}
 #print(f"最初のX座標: {alien_0['x_position']}")
 
@@ -12,17 +42,28 @@
 
 #print(f"新しいX座標: {alien_0['x_position']}")
 
-alien_0 = {"color": "green", "points": 5}
+#alien_0 = {"color": "green", "points": 5}
+#alien_1 = {"color": "yellow", "points": 10}
+#alien_2 = {"color": "red", "points": 15}
+
+#aliens = [alien_0, alien_1, alien_2]
+#
+#for alien in aliens:
+#	print(alien)
+
+
+
+
 #print(f"エイリアンは{alien_0['color']}です。")
 
 #alien_0["color"] = "yellow"
 #print(f"エイリアンは{alien_0['color']}になりました")
 #alien_0["x_position"] = 0
 #alien_0["y_position"] = 25
-print(alien_0)
+#print(alien_0)
 
-del alien_0["points"]
-print(alien_0)
+#del alien_0["points"]
+#print(alien_0)
 #alien_0 = {"color": "green"}
 
 #new_points = alien_0["points"]
