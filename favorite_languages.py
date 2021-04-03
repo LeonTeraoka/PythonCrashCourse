@@ -1,23 +1,37 @@
 favorite_languages = {
-	"jen": "python",
-	"sarah": "c",
-	"edward": "ruby",
-	"phil": "python",
+	"jen": ["python", "ruby"],
+	"sarah": ["c"],
+	"edward": ["ruby", "go"],
+	"phil": ["python", "haskell"]
 }
 
-not_vote = ["jen", "sarah"]
+for name, languages in favorite_languages.items():
+	print(f"\n{name.title()}の好きな言語")
+	for language in languages:
+		print(f"\t{language.title()}")
+
+
+
+#favorite_languages = {
+#	"jen": "python",
+#	"sarah": "c",
+#	"edward": "ruby",
+#	"phil": "python",
+#}
+
+#not_vote = ["jen", "sarah"]
 
 #print("以下の言語が投票されました。")
 #for language in set(favorite_languages.values()):
 #	print(language.title())
-for name in not_vote:
-	print(f"{name.title()}さん、投票してください！")
+#for name in not_vote:
+#	print(f"{name.title()}さん、投票してください！")
 
-del favorite_languages["jen"] 
-del favorite_languages["sarah"]
+#del favorite_languages["jen"] 
+#del favorite_languages["sarah"]
 
-for name in sorted(favorite_languages.keys()):
-	print(f"{name.title()}、投票ありがとう。")
+#for name in sorted(favorite_languages.keys()):
+#	print(f"{name.title()}、投票ありがとう。")
 
 #if name not in favorite_languages.keys():
 #	print(f"{other.title()}さん投票してください！")
