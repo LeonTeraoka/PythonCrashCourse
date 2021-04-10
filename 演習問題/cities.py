@@ -16,6 +16,12 @@ cities = {
 		"population": "13.98億人",
 		"fact": "共産党",
 	},
+
+	"india": {
+		"country": "ニューデリー",
+		"population": "13.66億人",
+		"fact": "屋台",
+	},
 }
 
 for city, details in cities.items():
