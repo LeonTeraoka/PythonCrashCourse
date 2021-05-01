@@ -1,8 +1,8 @@
-def greet_user():
+def greet_user(username):
 	"""シンプルなあいさつメッセージを出力する"""
-	print("こんにちは！")
+	print(f"こんにちは{username.title()}！")
 
-greet_user()
+greet_user("jesse")
 
 
 
