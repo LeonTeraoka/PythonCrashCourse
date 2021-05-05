@@ -4,6 +4,7 @@ def describe_pet(animal_type, pet_name):
 	print(f"{animal_type}の名前は{pet_name.title()}です。")
 
 describe_pet("フェレット", "せぶん")
+describe_pet("イヌ", "ウィリー")
 
 
 
