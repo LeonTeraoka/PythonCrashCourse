@@ -1,11 +1,11 @@
-def make_pizza(*toppings):
+def make_pizza(size, *toppings):
 	"""注文されたピザの要約を出力する"""
-	print("\n以下のトッピングのピザを作ります。")
+	print(f"\n{size}インチのピザを、以下のトッピングで作ります。")
 	for topping in toppings:
 		print(f"-{topping}")
 
-make_pizza("ペパロニ")
-make_pizza("マッシュルーム","ピーマン","エクストラチーズ")
+make_pizza(16, "ペパロニ")
+make_pizza(12, "マッシュルーム","ピーマン","エクストラチーズ")
 
 
 
