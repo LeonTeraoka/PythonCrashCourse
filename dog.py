@@ -15,6 +15,14 @@ class Dog:
 		print(f"{self.name}がごろーんした！")
 
 my_dog = Dog("ウィリー", 6)
+your_dog = Dog("ルーシー", 3)
 
 print(f"私のイヌの名前は{my_dog.name}です。")
 print(f"私のイヌは{my_dog.age}歳です。")
+my_dog.sit()
+my_dog.roll_over()
+
+print(f"\nあなたのイヌの名前は{your_dog.name}です。")
+print(f"あなたのイヌは{your_dog.age}歳です。")
+your_dog.sit()
+your_dog.roll_over()
