@@ -27,8 +27,17 @@ class ElectricCar(Car):
 	"""電気自動車に特有の情報を表すクラス"""
 
 	def __init__(self, make, model, year):
-		"""親クラスの属性を初期化する"""
+		"""
+		親クラスの属性を初期化する
+		次に電気自動車に特有の属性を初期化する
+		"""
 		super().__init__(make, model, year)
+		self.battery_size = 75
+
+	def describe_battery(self):
+		"""バッテリーのサイズの説明文を出力する"""
+		print(f"この車のバッテリーは{self.battery_size}-kWhです。")
 
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
