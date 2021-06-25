@@ -38,6 +38,10 @@ class ElectricCar(Car):
 		"""バッテリーのサイズの説明文を出力する"""
 		print(f"この車のバッテリーは{self.battery_size}-kWhです。")
 
+	def fill_gas_tank(self):
+		"""電気自動車にはガソリンのタンクは存在しない"""
+		print(f"この自動車にはガソリンのタンクはありません！")
+
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
