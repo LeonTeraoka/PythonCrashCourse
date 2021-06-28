@@ -25,17 +25,28 @@ class User:
 		self.login_attempts += login
 		print(f"{self.login_attempts}回ログインしました。")
 
-greet1 = User("muffn", "men")
-greet2 = User("mint", "men")
+class Admin(User):
 
-greet1.describe_user()
-greet1.greet_user()
+	def __init__(self, privileges):
+		self.privileges = privileges
 
-greet2.describe_user()
-greet2.greet_user()
+	def show_privileged():
+		privileges = ["投稿を追加する", "投稿を削除する", "ユーザーを利用禁止にする"]
+		print(f"管理者の権限一覧:{self.privileges}")
 
-greet1.reset_login_attempts(4)
-greet1.increment_login_attempts(3)
+privileges = ["投稿を追加する", "投稿を削除する", "ユーザーを利用禁止にする"]
+privileges = Admin(privileges[0])
+#greet1 = User("muffn", "men")
+#greet2 = User("mint", "men")
 
-greet1.reset_login_attempts(2)
-greet1.increment_login_attempts(1)
+#greet1.describe_user()
+#greet1.greet_user()
+
+#greet2.describe_user()
+#greet2.greet_user()
+
+#greet1.reset_login_attempts(4)
+#greet1.increment_login_attempts(3)
+
+#greet1.reset_login_attempts(2)
+#greet1.increment_login_attempts(1)
