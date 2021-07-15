@@ -47,5 +47,19 @@ ws_new.append(["顧客ID", "顧客名称", "売上件数"])
 for result in result_list:
 	ws_new.append(result)
 
+id_list = []
+# 集計結果書き込み
+for result in result_list:
+	ws_new.append(result)
+	# 集計した顧客IDのリストを作成
+	id_list.append(result[0])
+
+# 集計されていない顧客を検索
+for row in ws_data.iter_rows(min_row=4):
+	# 検索条件(集計した顧客IDのリストに含まれない)
+	if row[1].value not in id_list:
+		# 集計されていない顧客IDと顧客名称を表示
+		print(row[1].value, row[2].value)
+
 # 別名で保存
 wb_data.save("売上データ_202007_顧客別売上件数.xlsx")
