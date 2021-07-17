@@ -35,9 +35,14 @@ for row in ws_data.iter_rows(min_row=4):
 	for customer in customer_list:
 		# 検索条件(顧客IDの一致)
 		if customer[0] == customer_id:
-			# 当社営業担当を[H列]に追加
-			ws_data["H" + str(row_num)].value = customer[5]
+			# [変更]:顧客の担当者
+			ws_data["H" + str(row_num)].value = customer[3]
+			# [追加]:担当者のメールアドレス
+			ws_data["I" + str(row_num)].value = customer[4]
 			break
+			# 当社営業担当を[H列]に追加
+			#ws_data["H" + str(row_num)].value = customer[5]
+			#break
 
 # 別名で保存
 wb_data.save("売上データ_202007_営業担当あり.xlsx")
